@@ -3,11 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter.js';
 import ReduxCounter from './ReduxCounter.js';
+import ReduxList from './ReduxList.js';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import myFirstReducer from './reducers';
+import myReducer from './reducers';
 
-let store = createStore(myFirstReducer);
+let store = createStore(myReducer);
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
 
           <Counter />
           <ReduxCounter/>
+          <ReduxList/>
 
       </div>
     </Provider>
